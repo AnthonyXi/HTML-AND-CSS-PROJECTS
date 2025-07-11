@@ -18,11 +18,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
@@ -32,7 +36,7 @@
               "RelativeDocumentMoniker": "contact.html",
               "ToolTip": "C:\\Users\\xiong\\OneDrive\\Documents\\GitHub\\HTML-AND-CSS-PROJECTS\\The-Pet-Shop-Website\\contact.html",
               "RelativeToolTip": "contact.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-07-04T02:23:37.802Z",
               "EditorCaption": ""
@@ -45,7 +49,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\xiong\\OneDrive\\Documents\\GitHub\\HTML-AND-CSS-PROJECTS\\The-Pet-Shop-Website\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAABYAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-07-04T01:15:46.624Z",
               "EditorCaption": ""
