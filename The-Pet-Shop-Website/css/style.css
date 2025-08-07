@@ -155,7 +155,7 @@ specifies which ones by the use of the id names for each images*/
     background-color: #c3e0c5;
 }
 
-#lizzard{
+#lizard{
     background-color: #d7eaf7;
 }
 
@@ -186,4 +186,65 @@ specifies which ones by the use of the id names for each images*/
 opacity when a user hovers their mouse over the image*/
 .overlay:hover{
     opacity: 0.6; 
+}
+
+/*This slector targets the video on the page*/
+iframe{
+    display: table;
+    margin: auto;
+    border-radius: 20px;
+    border:none ;
+}
+
+/*Styles the div element that holds the video*/
+#video{
+    background-color: #c3e0c5;
+    padding-top: 5px; /*Padding will add an inline space so
+    the elements don't sit on the edge of the div*/
+    padding-bottom: 50px;
+}
+
+footer{
+    background-color: #216391;
+    margin-top: 50px;
+    /*Negative margins stretch the footer background beyond the
+    web browser screen edge on the left and right*/
+    margin-right: -10px;
+    margin-left: -10px;
+    bottom: 0;/*Positions the footer at the bottom of
+    the screen*/
+}
+
+/*styles the table elements within the footer tags*/
+table{
+    width: 100%;
+}
+
+td{
+    text-align: center;
+    width: 33%;/*We divide the three columns equally so that
+    each column takes up 1/3 of the browser width*/
+}
+
+/*Specifically styles the paragraph elements within the
+table data elements*/
+td p{
+    font-family: "Roboto", sans-serif; /*Font from fonts.google.com*/
+    color:rgb(255, 255, 255) ;
+}
+
+/*FORM CSS*/
+form{
+    padding: 15px;
+    display: table;
+    margin: auto;
+}
+
+input{
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 2px;
+    padding: 1px;
+    margin: 10px 15px 10px 0px;
+    font-size: 20px;
+    color: rgb(165, 165, 165);
 }
