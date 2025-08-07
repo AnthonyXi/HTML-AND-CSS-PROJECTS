@@ -1,84 +1,120 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <title>The Pet Shop</title>
     <meta charset="utf-8" />
     <meta name="description" content="The Pet Shop Home Page">
     <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
     <!--NAVBAR-->
-     <nav class="navbar">
-        <ul>
+    <nav class="navbar">
+        <ul id="nav-border">
             <li><a href="index.html">HOME</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
         <ul>
-            <a href="#cat"><li>Cats & Kittens</li></a>
-            <a href="#dog"><li>Dog & Puppies</li></a>
-            <a href="#rabbit"><li>Rabbits</li></a>
-            <a href="#lizzard"><li>Lizzard</li></a>
-            <a href="#koala"><li>Koala</li></a>
-            <a href="#parrot"><li>Parrot</li></a>
-            <a href="#video"><li>Videos</li></a>
+            <a href="#cat">
+                <li>Cats & Kittens</li>
+            </a>
+            <a href="#dog">
+                <li>Dog & Puppies</li>
+            </a>
+            <a href="#rabbit">
+                <li>Rabbits</li>
+            </a>
+            <a href="#lizzard">
+                <li>Lizzard</li>
+            </a>
+            <a href="#koala">
+                <li>Koala</li>
+            </a>
+            <a href="#parrot">
+                <li>Parrot</li>
+            </a>
+            <a href="#video">
+                <li>Videos</li>
+            </a>
         </ul>
     </nav>
     <!--HEADER-->
     <header>
         <div>
-            <h1>Welcome to The Pet Shop</h1>
+            <h1 class="animate-text">Welcome to The Pet Shop</h1>
         </div>
     </header>
     <blockquote cite="https://www.goodreads.com/quotes/tag/animals-and-man">
-        Animals are a gift from above for they truly define the words unconditional love. ― Heather Wolf, Kipnuk Has a Birthday
+        Animals are a gift from above for they truly define the words unconditional love. ― Heather Wolf, Kipnuk Has a
+        Birthday
     </blockquote>
     <!--PET IMAGES-->
     <section>
-        <div>   
+        <div class="container">
             <h2>Choose a Pet</h2>
             <div>
                 <!--CAT IMAGE-->
-                <div id="cat">
-                    <h3> Cats & Kittens</h3>
-                    <img src="images/Cat.jpg" alt="Picture of a Kittens" />
+                <div id="cat" class="column">
+                    <div class="image-container">
+                        <h3> Cats & Kittens</h3>
+                        <img src="images/Cat.jpg" alt="Picture of a Kittens" />
+                        <div class="overlay"></div>
+                    </div>
                 </div>
                 <!--DOG IMAGE-->
-                <div id="dog">
-                    <h3>Dogs & Puppies</h3>
-                    <em>Ain't this dog cute!'</em>
-                    <img src="images/Dog.jpg" alt="Picture of a Dogs" />
+                <div id="dog" class="column">
+                    <div class="image-container">
+                        <h3>Dogs & Puppies</h3>
+                        <em>Ain't this dog cute!'</em>
+                        <img src="images/Dog.jpg" alt="Picture of a Dogs" />
+                        <div class="overlay"></div>
+                    </div>
                 </div>
                 <!--RABBIT IMAGE-->
-                <div id="rabbit">
-                    <h3>Rabbits & Bunny</h3>
-                    <img src="images/Bunny.jpg" alt="Picture of a Rabbits" />
+                <div id="rabbit" class="column">
+                    <div class="image-container">
+                        <h3>Rabbits & Bunny</h3>
+                        <img src="images/Bunny.jpg" alt="Picture of a Rabbits" />
+                        <div class="overlay"></div>
+                    </div>
                 </div>
                 <!--LIZZARD IMAGES-->
-                <div id="lizzard">
-                    <h3>Lizzards</h3>
-                    <img src="images/Lizzard.jpg" alt="Picture of a Lizzard" />
+                <div id="lizzard" class="column">
+                    <div class="image-container">
+                        <h3>Lizzards</h3>
+                        <img src="images/Lizzard.jpg" alt="Picture of a Lizzard" />
+                        <div class="overlay"></div>
+                    </div>
                 </div>
                 <!--KOALA IMAGE-->
-                <div id="koala">
-                    <h3>Koalas</h3>
-                    <img src="images/Koala.jpg" alt="Picture of a Koala" />
+                <div id="koala" class="column">
+                    <div class="image-container">
+                        <h3>Koalas</h3>
+                        <img src="images/Koala.jpg" alt="Picture of a Koala" />
+                        <div class="overlay"></div>
+                    </div>
                 </div>
                 <!--PARROT IMAGE-->
-                <div id="parrot">
-                    <h3>Parrots</h3>
-                    <img src="images/Parrot.jpg" alt="Picture of a Parrot" />
+                <div id="parrot" class="column">
+                    <div class="image-container">
+                        <h3>Parrots</h3>
+                        <img src="images/Parrot.jpg" alt="Picture of a Parrot" />
+                        <div class="overlay"></div>
+                    </div>
                 </div>
             </div>
         </div>
-</section>
+    </section>
     <!--VIDEOS-->
     <section>
         <!--DOG VIDEO-->
-        <div id="video">
+        <div id="video" class="container"> >
             <h3>Videos</h3>
             <em>Feel Free to contact us</em>
-            <iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4" alt="Video of a Dog"></iframe>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4"
+                alt="Video of a Dog"></iframe>
         </div>
     </section>
     <!--FOOTER-->
@@ -99,4 +135,5 @@
         </table>
     </footer>
 </body>
+
 </html>
