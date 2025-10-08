@@ -1,5 +1,7 @@
 /*Font Passion one from fonts.google.com*/
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+/*Font Yesteryear from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
 /* Creates global CSS variables that can be reused 
 throughout the file */
@@ -11,6 +13,11 @@ throughout the file */
     --accent-color: rgb(36, 36, 36);
     --accent-text-color: rgb(255, 255, 255);
     --main-font-family: 'Passion One', cursive;
+    --secondary-font-family: 'Yesteryear', cursive;
+}
+
+html{
+    scroll-padding-top: 100px;
 }
 
 body{
@@ -117,7 +124,7 @@ drop down menu*/
 
 /*GENERAL STYLING*/
 
-h1, h3, p{
+h1, h3, h4, h5, p{
     cursor: default; /*Changes the cursor back to the
     default arrow instead of a text cursor when hovering
     your mouse over text*/
@@ -136,13 +143,94 @@ h3{
    font-size: 50px;
 }
 
+h4{
+    font-family: var(--secondary-font-family);
+    font-size: 25px;
+}
+
+h5{
+    font-size: 30px;
+    font-family: var(--main-font-family);
+}
+
 b{
     font-weight: 600;
 
+}
+
+img{
+    border-radius: 5px;
 }
 
 /*MOVIE CARDS*/
 
 .container{
     padding: 100px;
+}
+
+.card{
+    border: 5px solid var(--main-color);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-body{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.spacer{
+    padding-top: 50px;
+}
+
+/*BUTTONS*/
+
+/*Creates the main styling for buttons that contain the
+Bootstrap .btn class*/
+.btn{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top:  10px;
+    color: var(--accent-color);
+    font-family: var(--main-font-family);
+    font-size: 18px;
+}
+
+.btn:focus{
+     border-color: transparent; /*Overrides Bootstraps dark
+     border when the userr clicks on the button*/
+     background-color: var(--main-color);
+     color: var(--accent-text-color);
+}
+
+.btn:hover{
+    bprder-color: transparent;
+    background-color: var(--main-color);
+    color: var(--accent-text-color);
+}
+
+/*TICKET CARDS*/
+
+/*Specifically styles the card class within the element
+containing the ticket id*/
+#ticket .card{
+    padding: 40px;
+    height: 250px;
+    margin-right: 20px;
+    background-color: white;
+}
+
+.from-select{
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    border: 3px solid var(--main-color);
+    transition: border-color 0.5s ease-in;
+}
+
+.form-select:focus{
+    border-color: var(--secondary-color);
+    box-shadow: none; /*Overrides bootstraps box shadow*/
+    transition: 0.5s ease-in;
 }
