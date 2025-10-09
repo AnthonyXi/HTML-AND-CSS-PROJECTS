@@ -206,8 +206,26 @@ Bootstrap .btn class*/
 }
 
 .btn:hover{
-    bprder-color: transparent;
+    border-color: transparent;
     background-color: var(--main-color);
+    color: var(--accent-text-color);
+}
+
+/*Added styling for yellow buttons for the buy tickets and 
+contact form sections*/
+.yellow-btn{
+    background-color: var(--main-color-accent);
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 25px;
+    color: var(--accent-color);
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.yellow-btn:hover, .yellow-btn:focus{
+    background-color: var(--main-color-accent);
     color: var(--accent-text-color);
 }
 
@@ -215,14 +233,14 @@ Bootstrap .btn class*/
 
 /*Specifically styles the card class within the element
 containing the ticket id*/
-#ticket .card{
+#tickets .card{
     padding: 40px;
     height: 250px;
     margin-right: 20px;
     background-color: white;
 }
 
-.from-select{
+.form-select{
     font-family: var(--main-font-family);
     font-size: 20px;
     border: 3px solid var(--main-color);
@@ -233,4 +251,98 @@ containing the ticket id*/
     border-color: var(--secondary-color);
     box-shadow: none; /*Overrides bootstraps box shadow*/
     transition: 0.5s ease-in;
+}
+
+/*Select number of tickets input*/
+input[type= "number"]{
+    width: 70px;
+    padding: 5px;
+    border: 3px solid var(--main-color);
+    border-radius: 5px;
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    transition: border-color 0.5s ease-in;
+}
+
+input[type=number]:focus{
+    border: 3px solid var(--secondary-color);
+    transition: 0.5s ease-in;
+    outline: 0; /*Removes the default outline set by
+    the browser*/
+}
+
+/*CONTACT FORM*/
+
+.form-control{
+    border: 3px solid var(--main-color);
+    transition: 1s ease;
+}
+
+/*Overrides Bootstrap's focus effect*/
+.form-control:focus{
+    color: #212529;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0px .25rem var(--main-color);
+}
+
+/*Adjustsd the contact form submit button to the right
+side of the screen*/
+#contact-submit{
+    float: right;
+}
+
+/*FOOTER*/
+
+footer{
+    border-top: 5px solid var(--main-color);
+    background-color: rgba(0,0,0,0.6);
+    margin: 0px -15 0px -15px; /*Extends the footer beyond
+    the webpages on the left of the right side leaving no
+    white space*/
+}
+
+.footer-text{
+    font-family: var(--main-font-family);
+    color:var(--accent-text-color);
+    font-size: 30px;
+}
+
+/*Specifically styles the footer image separate from the
+other images on the page and overrides the img type
+slector styling*/
+.footer-img{
+    width: auto;
+    height: 130px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+/* Instagram */
+.fa-instagram {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #fcaf45, #ffd700);
+  color: white;
 }
