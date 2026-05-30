@@ -538,12 +538,14 @@ input[type="submit"]:hover{
 }
 
 .recipe-list{
-    margin-left: 30px;
+    margin-left: -30px;
     font-family: 'Josefin Slab', serif;
     font-size: 18px;
     display: block; /*This will override the flex value property in the ul
     type selector and list each item one after the other*/
     border: none; /*Overrides the border property and vaulue in the
+    ul type selector*/
+    background-color: transparent; /*Overrides the background-color property and value in the
     ul type selector*/
     line-height: 1.5;
     text-align: center;
