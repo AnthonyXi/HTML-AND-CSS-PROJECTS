@@ -15,6 +15,10 @@ for (var i = 0; i < btns.length; i++) {
         modal = document.querySelector(event.target.getAttribute
         ("href"));
         modal.style.display = "block";
+        
+        setTimeout(function() {
+            modal.style.display = "none";
+        }, 10000);
     }
 }
 
@@ -68,7 +72,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         lastName: lastName,
         email: email,
         phone: phone,
-        message: message
+        message: message,
         subscription: document.getElementById("subscription").checked
     };
 
