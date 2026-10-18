@@ -346,3 +346,17 @@ slector styling*/
   background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #fcaf45, #ffd700);
   color: white;
 }
+
+/*POPOVERS*/
+.star-rating{
+    width: 80%;
+}
+
+/*TOAST*/
+.custom-toast{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
